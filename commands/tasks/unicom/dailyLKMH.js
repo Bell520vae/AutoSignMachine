@@ -84,7 +84,7 @@ var dailyLKMH = {
         }
         return data
       }
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：dailyLKMH.js'))
     let jar1 = result.config.jar
 
     let cookiesJson = jar1.toJSON()
@@ -123,7 +123,7 @@ var dailyLKMH = {
       url: `/jf-yuech/p/freeLogin`,
       method: 'post',
       data: reqdata
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：dailyLKMH.js'))
 
     result = res.data
     if (result.code !== 0) {

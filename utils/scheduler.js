@@ -270,7 +270,7 @@ let scheduler = {
                             fs.writeFileSync(scheduler.taskFile, JSON.stringify(taskJson))
                         }
                     } catch (err) {
-                        console.log('任务错误：', err)
+                        console.log('任务错误：scheduler.js')
                     }
                 })
             }

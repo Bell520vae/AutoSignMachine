@@ -146,7 +146,7 @@ var producGame = {
                 method: 'post',
                 responseType: 'arrayBuffer',
                 data: infoEncodeMessage
-            }).catch(err => console.log(err))
+            }).catch(err => console.log('任务错误：producGame.js'))
 
             console.log(Buffer.from(res.data).toString('hex'))
 
@@ -222,7 +222,7 @@ var producGame = {
             method: 'post',
             responseType: 'arrayBuffer',
             data: infoEncodeMessage
-        }).catch(err => console.log(err))
+        }).catch(err => console.log('任务错误：producGame.js'))
         let result = JSON.parse(Buffer.from(res.data).slice(0x7).toString('utf-8'))
         return result
     },

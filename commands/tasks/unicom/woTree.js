@@ -46,7 +46,7 @@ var woTree = {
         }
         return data
       }
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：woTree.js'))
 
     let jar = result.config.jar
     let cookiesJson = jar.toJSON()

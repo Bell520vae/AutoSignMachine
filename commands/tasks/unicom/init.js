@@ -156,7 +156,7 @@ module.exports = async (axios, params) => {
       url: `/mobileService/onLine.htm`,
       method: 'post',
       data: transParams(params)
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：init.js'))
 
     if (data.code !== '0') {
       console.log(data.dsc)

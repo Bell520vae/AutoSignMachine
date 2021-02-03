@@ -83,7 +83,7 @@ var dailyVideoScratchcard = {
         }
         return data
       }
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：dailyVideoScratchcard.js'))
 
     let jar1 = result.config.jar
 

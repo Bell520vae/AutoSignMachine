@@ -79,7 +79,7 @@ module.exports = {
                 }
                 return data
             }
-        }).catch(err => console.log(err))
+        }).catch(err => console.log('任务错误：jflottery.js'))
         return {
             searchParams,
             jar: res.config.jar
@@ -122,7 +122,7 @@ module.exports = {
             url: `/jf-yuech/p/freeLoginRock`,
             method: 'post',
             data: reqdata
-        }).catch(err => console.log(err))
+        }).catch(err => console.log('任务错误：jflottery.js'))
         let result = res.data
         if (result.code !== 0) {
             throw new Error(result.message)

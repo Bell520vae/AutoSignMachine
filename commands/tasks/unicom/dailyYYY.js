@@ -85,7 +85,7 @@ var dailyYYY = {
         }
         return data
       }
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：dailyYYY.js'))
     let jar1 = result.config.jar
 
     let cookiesJson = jar1.toJSON()
@@ -130,7 +130,7 @@ var dailyYYY = {
       url: `/jf-yuech/p/freeLoginRock`,
       method: 'post',
       data: reqdata
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：dailyYYY.js'))
 
     result = res.data
     if (result.code !== 0) {

@@ -86,7 +86,7 @@ var dailyCheapStorePage = {
         }
         return data
       }
-    }).catch(err => console.log(err))
+    }).catch(err => console.log('任务错误：dailyCheapStorePage.js'))
     let jar1 = result.config.jar
 
     let cookiesJson = jar1.toJSON()

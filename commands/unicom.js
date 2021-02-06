@@ -77,7 +77,7 @@ exports.handler = async function (argv) {
       taskKey: account.user
     })
     if (hasTasks) {
-      scheduler.execTask(command, account.tasks).catch(err => console.log("unicom任务:", err)).finally(() => {
+      scheduler.execTask(command, account.tasks).catch(err => console.log('unicom任务错误')).finally(() => {
         console.log('当前任务执行完毕！')
       })
     } else {

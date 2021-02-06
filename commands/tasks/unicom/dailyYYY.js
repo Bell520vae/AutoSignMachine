@@ -223,7 +223,7 @@ var dailyYYY = {
         url: `https://m.jf.10010.com/jf-yuech/api/gameResultV2/consumptionGameTimes`,
         method: 'get',
         params: transParams(p1)
-      }).catch(err => console.log(err))
+      }).catch(err => console.log('任务错误：dailyYYY.js'))
 
       if (res.data.code !== 0) {
         throw new Error(res.data.message)

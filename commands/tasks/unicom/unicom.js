@@ -107,13 +107,13 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-赢三星Galaxy Z(试试手气)
-  await scheduler.regTask('dailyCheapStorePage', async (request) => {
-    await require('./dailyCheapStorePage').doTask(request, options)
-  }, {
-    isCircle: true,
-    intervalTime: 4 * 3600,
-    ...taskOption
-  })
+  //await scheduler.regTask('dailyCheapStorePage', async (request) => {
+  //  await require('./dailyCheapStorePage').doTask(request, options)
+  //}, {
+  //  isCircle: true,
+  //  intervalTime: 4 * 3600,
+  //  ...taskOption
+  //})
 
   // 首页-签到有礼-免费抽-拆华为Pad(去抽奖)
   await scheduler.regTask('dailyLKMH', async (request) => {
@@ -191,13 +191,13 @@ var start = async (params) => {
   })
 
   // 首页-牛气-秒杀抢兑
-  await scheduler.regTask('NiujieSpikePrize', async (request) => {
-    await require('./Niujie').spikePrize(request, options)
-  }, {
-    ...taskOption,
-    startTime: 9.6 * 3600,
-    ignoreRelay: true
-  })
+  //await scheduler.regTask('NiujieSpikePrize', async (request) => {
+  //  await require('./Niujie').spikePrize(request, options)
+  //}, {
+   // ...taskOption,
+  //  startTime: 9.6 * 3600,
+   // ignoreRelay: true
+  //})
 
   // 首页-牛气-转盘抽奖
   await scheduler.regTask('NiujieTask', async (request) => {
@@ -206,14 +206,15 @@ var start = async (params) => {
 
 
   // 首页-牛气-场馆领牛气
-  await scheduler.regTask('NiujieReceiveCalf', async (request) => {
-    await require('./Niujie').receiveCalf(request, options)
-  }, {
-    isCircle: true,
-    intervalTime: 1 * 3600,
-    startTime: 1,
-    ...taskOption
-  })
+ // await scheduler.regTask('NiujieReceiveCalf', async (request) => {
+  //  await require('./Niujie').receiveCalf(request, options)
+//  }, {
+  //  isCircle: true,
+  //  intervalTime: 1 * 3600,
+  //  startTime: 1,
+ //  ...taskOption
+ // })
+  
 }
 module.exports = {
   start

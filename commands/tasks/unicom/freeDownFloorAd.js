@@ -66,7 +66,7 @@ let freeDownFloorAd = {
         method: "post",
         data: appinfo,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("00000000000000000000000000000000000"));
     let jar1 = res.config.jar.toJSON();
     jar1.cookies.push({
       key: "req_wheel",
@@ -95,7 +95,7 @@ let freeDownFloorAd = {
         url: `/mobileService/downloads/findAll.htm`,
         method: "post",
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("00000000000000000000000000000000000000"));
     console.log(res.data);
   },
   onAdClick: async (axios, options, appinfo) => {
@@ -116,7 +116,7 @@ let freeDownFloorAd = {
         method: "post",
         data: appinfo,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("00000000000000000000000000000000000"));
     console.log(res.data);
     console.log("等待15秒再继续");
     // eslint-disable-next-line no-unused-vars
@@ -140,7 +140,7 @@ let freeDownFloorAd = {
         method: "post",
         data: appinfo,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("0000000000000000000000000000000000000000000"));
     console.log(res.data);
     console.log("等待15秒再继续");
     // eslint-disable-next-line no-unused-vars
@@ -164,7 +164,7 @@ let freeDownFloorAd = {
         method: "post",
         data: appinfo,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("00000000000000000000000000000000000000"));
     console.log(res.data);
     console.log("等待15秒再继续");
     // eslint-disable-next-line no-unused-vars
@@ -188,7 +188,7 @@ let freeDownFloorAd = {
         method: "post",
         data: appinfo,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("11111111111111111111111111111111111"));
     console.log(res.data);
     console.log("等待15秒再继续");
     // eslint-disable-next-line no-unused-vars
@@ -212,7 +212,7 @@ let freeDownFloorAd = {
         method: "post",
         data: appinfo,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("111111111111111111111111111111111111111111"));
     console.log(res.data);
     console.log("等待15秒再继续");
     // eslint-disable-next-line no-unused-vars
@@ -232,7 +232,7 @@ let freeDownFloorAd = {
         Referer: `https://img.client.10010.com/SigininApp/index.html?yw_code=&desmobile=${options.user}&version=android@8.0102`,
         "X-Requested-With": "com.sinovatech.unicom.ui",
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("11111111111111111111111111111111111"));
     console.log(res.data);
   },
   lookVideoDouble: gameEvents.lookVideoDouble(

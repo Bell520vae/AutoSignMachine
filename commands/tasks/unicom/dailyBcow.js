@@ -131,7 +131,7 @@ module.exports = bcow = {
           method: "post",
           data: params,
         })
-        .catch((err) => console.log(err));
+        .catch((err) => console.log("00000000000000000000000000000000000"));
 
       let result = res.data;
       if (result.code !== 0) {

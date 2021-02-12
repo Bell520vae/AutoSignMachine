@@ -126,9 +126,9 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-赢Apple Watch(去抽奖)
-  await scheduler.regTask('dailyTurntablePage', async (request) => {
-    await require('./dailyTurntablePage').doTask(request, options)
-  }, taskOption)
+  //await scheduler.regTask('dailyTurntablePage', async (request) => {
+  //  await require('./dailyTurntablePage').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-赚更多福利-看视频奖励5积分
   await scheduler.regTask('dailyVideo', async (request) => {
@@ -214,6 +214,56 @@ var start = async (params) => {
   //  startTime: 1,
  //  ...taskOption
  // })
+
+
+  // 首页-签到有礼-赢vivo X60(翻牛牌)
+  await scheduler.regTask(
+    "bcow",
+    async (request) => {
+      await require("./dailyBcow").doTask(request, options)
+    },
+    taskOption
+  )
+
+
+
+  //首页-签到有礼-聚宝盆 [广告图]
+  await scheduler.regTask(
+    "ingots",
+    async (request) => {
+      await require("./ingotsPage").doTask(request, options)
+    },
+    taskOption
+  )
+
+
+
+  //首页-积分商城-10分精彩看视频得积分-三只松鼠 [支付页]
+  await scheduler.regTask(
+    "threeSquirrels",
+    async (request) => {
+      await require("./dailyThreeSquirrels.js").doTask(request, options)
+    },
+    taskOption
+  )
+
+
+  //首页-下载app
+  await scheduler.regTask(
+    "freeDownFloorAd",
+    async (request) => {
+      await require("./freeDownFloorAd.js").doTask(request, options)
+    },
+    taskOption
+  )
+
+
+
+
+
+
+
+
   
 }
 module.exports = {

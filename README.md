@@ -1,4 +1,4 @@
-# AutoSignMachine
+# 联通是我兄弟！！！
 
 
 
@@ -88,5 +88,3 @@ docker run \
 #增加 --tasks taskName1,taskName2,taskName3
 ```
 
-### GitHub Actions 运行问题
-暂未处理GitHub Actions支持

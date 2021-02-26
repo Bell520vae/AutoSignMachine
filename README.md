@@ -2,8 +2,6 @@
 
 
 
-https://github.com/DJ-clamp/BaseSation/
-
 
 、
 ## 联通APP签到任务
